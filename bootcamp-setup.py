@@ -10,7 +10,7 @@ working_repo = sys.argv[1]
 issue_num = sys.argv[2]
 
 # Get Environment Variables
-github_token = os.environ.get("GITHUB_TOKEN")
+github_token = "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" #os.environ.get("GITHUB_TOKEN")
 admin_token = "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"
 
 # Setup clients
