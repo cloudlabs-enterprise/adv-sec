@@ -158,7 +158,7 @@ def main():
 
     # Get enterprise id
     try:
-        enterprise_id = admin_client.enterprise.get_id(config["enterprise"])
+        enterprise_id = "E_kgDOAAH7KQ" #admin_client.enterprise.get_id(config["enterprise"])
     except Exception as e:
         issue_ops_client.issue.apply_label(config["labels"]["error"])
         issue_ops_client.issue.remove_label(config["labels"]["working"])
