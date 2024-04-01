@@ -11,7 +11,7 @@ issue_num = sys.argv[2]
 
 # Get Environment Variables
 github_token = os.environ.get("GITHUB_TOKEN")
-admin_token = os.environ.get("ADMIN_TOKEN")
+admin_token = "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"
 
 # Setup clients
 issue_ops_client = client.Client(github_token, working_repo, issue_num)
