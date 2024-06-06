@@ -128,7 +128,7 @@ def provision_enironments(
                     forked_repo = attendee["org_name"] + "/" + repo.split("/")[1]
                     # Adding a sleep to avoid race condition when creating a repo and marking it private
                     time.sleep(15)
-                    admin_client.repo.visibility(forked_repo, "private")
+                    admin_client.repo.visibility(forked_repo, "public")
             except Exception:
                 attendee["fork_errors"].append(repo)
                 pass
